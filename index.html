@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Refleks</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="modalContainer">
+        <div id="modal">
+            <h2>Instrukcja</h2>
+            <p>Wybierz kolor z listy, nastepnie nacisnij przycisk START. Gdy tło zmieni kolor na wybrany przez Ciebie jak najszybciej naciśnij STOP. Wynik zostanie wyświetlony poniżej przycisków.</p>
+            <button id='remove'>&times;</button>
+        </div>
+    </div>
+
+    <header>
+        <h1>refleks</h1>
+        <button id='instruction'>Instrukcja</button>
+    </header>
+
+    <form name='reactions'>
+        <select id="changeBackground">
+           <option selected value='white'>Wybierz kolor</option>
+            <option value='red'>Red</option>
+            <option value='green'>Green</option>
+            <option value='blue'>Blue</option>
+        </select>
+    </form>
+
+    <div id="buttonContainer">
+        <input type="button" value='Start' id='start' class='button'>
+        <input type="button" value='Stop' id='stop' class='button'>
+    </div>
+
+    <div id="wyniki">
+        <p id='para'></p>
+        <p id='average'></p>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+
+</html>
